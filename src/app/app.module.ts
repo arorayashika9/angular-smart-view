@@ -18,8 +18,12 @@ import { MoviesListComponent } from './frame/movies/movies-list/movies-list.comp
 
 
 const routes :Routes = [
-  {path: '', redirectTo:'/movies',pathMatch:'full'},
+  {path: '', redirectTo:'/search',pathMatch:'full'},
+  {path: 'search', component:SearchComponent},
   {path: 'movies', component:MoviesComponent},
+  {path: 'resturant', component:ResturantComponent},
+  {path: 'news', component:NewsComponent},
+  {path: 'weather', component:WeatherComponent},
 ];
 
 @NgModule({
